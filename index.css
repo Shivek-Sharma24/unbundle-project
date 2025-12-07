@@ -494,6 +494,11 @@ line-height: 22px;
   width: 30%;
   margin: 0;
 }
+.parent-div{
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
 
 }
 
