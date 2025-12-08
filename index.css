@@ -41,8 +41,15 @@
   }
   .logo {
     padding: 0;
-    width: 30%;
-    margin-left: 5px;
+    width: 40%;
+    
+  }
+  .logo img{
+    width: 60%;
+    /* padding: 4px; */
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .navbar {
     width: 100%;
@@ -61,124 +68,15 @@
   transition: 0.3s ease;
 }
 
-/* Hero Section start */
-.parent-hero{
-  max-height: 85vh;
-  display: flex;
-  /* align-items: stretch; */
-  /* flex-wrap: wrap; */
-  width: 100vw;
-  /* overflow: hidden; */
-}
-.hero {
-  width: 100%;
-  /* overflow: hidden; */
-  /* min-height:100vh; */
-  background: url("./Assets/d9e2eb1945ffd93ea40450c1db6dd1c7d2b70f19.jpg")
-    no-repeat center center;
-  /* position: relative; */
-  background-size: cover;
-  z-index: 1;
-  display: flex;
-}
-.form{
-  min-width: 300px;
-  /* width: 40%; */
-  flex-direction: column;
-  gap: 15px;
-  display: flex;
-  background-color: #fff;
-  color: black;
-  border: 2px solid orange;
-  align-items: center;
-  padding: 35px;
-  height: auto;
-  max-width: 80vw;
-  /* justify-content: center; */
-}
-/* FLEX LAYOUT */
-.overlay {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  position: absolute;
-  top: 30%;
-}
+ 
+/* MOBILE RESPONSIVE RULE */
 
-/* LEFT BLUR TEXT PANEL */
-.content {
-  z-index: 1;
-  width: 50%;
-  padding: 40px;
-  color: #fff;
-  position: relative;
-  backdrop-filter: blur(10px);
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-
-.content p {
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-/* RIGHT HUMAN IMAGE */
-.human {
-  width: 55%;
-  padding: 10px;
-  z-index: 99;
-  position: absolute;
-  left: 40%;
-}
-
-.human img {
-  /* width: 62%; */
-  overflow: hidden;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 10px;
-  margin-top: 35px;
-}
-/* ========================= */
-/* ✅ MOBILE RESPONSIVE RULE */
-/* ========================= */
 @media (max-width: 768px) {
-  .parent-hero{
-    /* display: flex; */
-    flex-direction: column;
-    min-height: auto;
-   
-  }
   .hero , .form{
     width: 100%;
     min-height: auto;
   }
  
-  /* .overlay {
-    flex-direction: column;
-  }
-
-  .content {
-    width: 100%;
-    border-radius: 0;
-    padding: 35px;
-
-    /* ✅ Blur now covers human also */
-    /* backdrop-filter: blur(14px); */
-  /* }
-
-  .human {
-    width: 100%;
-  }
-
-  .human img {
-    max-width: 260px;
-  }
-
-  .content h1 {
-    font-size: 32px;
-  }  */
 }
 
 .inputs{
@@ -290,6 +188,7 @@ margin-bottom: 5px;
   /* justify-content: center; */
   min-width: 100vw;
   overflow-x: auto;
+  margin-top: 13px;
 }
 .ratings{
   display: flex;
